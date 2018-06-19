@@ -1,0 +1,58 @@
+.chatArea {
+  padding-bottom: 270px;
+  transition: padding-bottom 0.2s ease;
+}
+.chatArea.bye {
+  padding-bottom: 70px;
+}
+
+#calibrateDiv {
+  position: absolute;
+  bottom: 20%;
+}
+
+#send_button_icon {
+  display: inline-block;
+}
+
+#snackbar-container {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+
+#dateRollInput {
+  display: none;
+}
+
+#suggestion-menu-container {
+  display: none;
+}
+
+.chat-bubble.empty {
+  box-shadow: none;
+  font-size: 13px;
+  color: #979797;
+}
+.user-chat-bubble.empty {
+  background-color: transparent;
+}
+
+li.message {
+  display: list-item;
+}
+
+.inputContainter {
+  transition: bottom 0.2s ease;
+}
+.inputContainter[type="date_roll"],
+.inputContainter[type="time_roll"]
+{
+  bottom: 200px;
+}
+#snackbar-container[type="date_roll"],
+#snackbar-container[type="time_roll"]
+{
+  height: 200px;
+}

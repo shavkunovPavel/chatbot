@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="no-user-scale" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Test Chat Bot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style_static.css" />
+    <link rel="stylesheet" href="css/facebook_messenger.css" />
+    <link rel="stylesheet" href="css/mobiscroll-2.4.custom.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/mobiscroll.jquery.min.js"></script>
+  </head>
+  <body class="chat-main-body ui-mobile-viewport ui-overlay-a is-desktop">
+    <div data-role="page" tabindex="0" class="ui-page ui-page-theme-a ui-page-active">
+      <ul class="pages">
+        <li class="chat page">
+          <div class="chatArea">
+            <ul class="messages">
+              <li class="log col-xs-12 power">
+                <span class="col-xs-4 col-xs-offset-4 powered-by">Powered for <strong>TEST</strong></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="inputContainter">
+            <div class="ui-input-text ui-body-inherit ui-corner-all ui-state-disabled ui-shadow-inset">
+              <input class="inputMessage" type="custom" />
+            </div>
+
+            <button id="send-button" class="sendButton ui-btn ui-shadow ui-corner-all">
+              <i id="send_button_icon" class="fa"></i>
+            </button>
+          </div>
+
+          <div id="snackbar-container" class="snackBar">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" charset="utf-8" src="js/Helper.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/ChatText.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/Bot.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+  </body>
+</html>
